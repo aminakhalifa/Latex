@@ -1,0 +1,36 @@
+\documentclass{report}
+\usepackage[french]{babel}
+\usepackage{lipsum}
+\usepackage{graphicx}
+
+\begin{document}
+\tableofcontents
+\part{Introduction au langage Latex}
+\chapter{Base pour débuter en Latex}
+\section{Introduction}
+\lipsum[1-2]
+% Ajout d'une image
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{nature.png}
+    \caption{nature}
+\end{figure}
+
+\part{Les Tableaux}
+\chapter{Base pour construire des tableaux}
+\section{Introduction}
+\lipsum[1-2]
+\begin{table}
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        a & b & c \\
+        \hline
+        a & b & c \\
+        \hline
+        a & b & c \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\end{document}
